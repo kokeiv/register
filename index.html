@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <form action="#" class="form">
+                <div class="form__title">
+                    <h1>Sign Up</h1>
+                </div>
+                
+                <div class="form__field">
+                    <h2>Username:</h2>
+                  <input type="text" name="name" placeholder="" required minlength="3" maxlength="25" value="username"/>
+                  
+                  <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
+                </div>
+                <div class="form__field">
+                    <h2>Email:</h2>
+                  <input type="email" name="name" placeholder="" value="email"/>
+                  
+                  <span class="form__error">E-Mail  example@site.com</span>
+                </div>
+                <div class="form__field">
+                    <h2>Password:</h2>
+                  <input type="password" name="name" placeholder="" value="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="18" maxlength="18" />
+                  
+                  <span class="form__error">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</span>
+                </div>
+                <div class="form__field">
+                    <h2>Confirm Password:</h2>
+                    <input type="password" name="name" placeholder="Retype New Password" id="txtConfirmPassword" onChange="isPasswordMatch();" />
+                    
+                    <span class="form__error">Please enter the password again</span>
+
+                </div>
+                    
+                <button type="submit">Sign Up</button>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
